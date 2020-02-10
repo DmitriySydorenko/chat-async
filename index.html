@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="alert alert-info" role="alert">
+        Привет! Это чат с бразуером. Но я не исключаю, что на той стороне с вами
+        общается живой человек. Для того, чтобы начать нажмите кнопку "Start".
+        Ответ приходит не сразу, человеку нужно подумать, будьте вежливы и
+        терпеливы Предупреждаю заранее, не говорите слово 'батон', его это может
+        обидеть. P.S Всегда есть вероятность, что собеседник захочет, чтобы вы
+        остановились, от этого никто не застрахован.
+      </div>
+
+      <button class="button btn btn-success">Start</button>
+
+      <div class="chat_container">
+        <div class="chat_container-block">
+          <input
+            type="text"
+            class="form-control input"
+            aria-describedby="emailHelp"
+            placeholder="Место для твоего творчества"
+          />
+          <button class="sendMessage btn btn-info">send</button>
+        </div>
+        <small id="emailHelp" class="form-text text-muted"
+          >Я не осуждаю, но это не нормально, что ты общаешься с браузером. Как
+          надоест - пиши "батон"</small
+        >
+      </div>
+
+      <div class="line"></div>
+
+      <div class="chat_answer-container">
+        <p class="browser-message" style="padding:10px;">
+          Нажми на Start, мне нужно сказать тебе нечто важное
+        </p>
+      </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
